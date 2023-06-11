@@ -9,11 +9,18 @@
   <body>
     <main>
       <div class="settings">
-        <button>Color Mode</button>
-        <button>Rainbow Mode</button>
-        <button>Eraser</button>
-        <button>Clear</button>
-        <button>Resize Slider</button>
+        <input id="colorPicker" type="color" value="#333333" />
+        <button id="colorBtn">Color Mode</button>
+        <button id="rainbowBtn">Rainbow Mode</button>
+        <button id="eraserBtn">Eraser</button>
+        <button id="clearBtn">Clear</button>
+        <label class="gridlinescb">
+          <input type="checkbox" checked="checked" />
+          <span class="checkmark"></span>
+          Grid Lines
+        </label>
+        <div id="sizeLabel">16 x 16</div>
+        <input id="sizeSlider" type="range" value="16" min="1" max="64" />
       </div>
       <div id="board">
         <header>Etch-a-sketch</header>
