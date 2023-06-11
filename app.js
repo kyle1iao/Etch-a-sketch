@@ -1,5 +1,5 @@
 // Global variables
-const DEFAULT_SIZE = 16;
+const DEFAULT_SIZE = 32;
 const DEFAULT_MODE = "color";
 
 let currentColor = "#333333";
@@ -15,7 +15,7 @@ const eraserBtn = document.getElementById("eraserBtn");
 const colorBtn = document.getElementById("colorBtn");
 const checkbox = document.querySelector('.gridlinescb input[type="checkbox"]');
 const colorPicker = document.getElementById("colorPicker");
-const sizeSlider = document.getElementById('sizeSlider')
+const sizeSlider = document.getElementById("sizeSlider");
 const sizeLabel = document.getElementById("sizeLabel");
 let gridItems;
 
@@ -40,21 +40,21 @@ container.addEventListener("mousedown", (e) => {
 });
 document.body.addEventListener("mouseup", () => (mouseDown = false));
 
-sizeSlider.onmousemove = (e) => updateSizeValue(e.target.value)
-sizeSlider.onchange = (e) => changeSize(e.target.value)
+sizeSlider.onmousemove = (e) => updateSizeValue(e.target.value);
+sizeSlider.onchange = (e) => changeSize(e.target.value);
 
 function changeSize(value) {
-  setCurrentSize(value)
-  updateSizeValue(value)
-  clear()
+  setCurrentSize(value);
+  updateSizeValue(value);
+  clear();
 }
 
 function updateSizeValue(value) {
-  sizeLabel.innerHTML = `${value} x ${value}`
+  sizeLabel.innerHTML = `${value} x ${value}`;
 }
 
 function setCurrentSize(newSize) {
-  currentSize = newSize
+  currentSize = newSize;
 }
 
 clearBtn.addEventListener("click", clear);
@@ -137,4 +137,4 @@ window.onload = () => {
   activateButton(DEFAULT_MODE);
 };
 
-console.log(sizeSlider)
+console.log(sizeSlider);

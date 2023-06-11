@@ -13,8 +13,9 @@ body {
 }
 
 header {
-  font-size: 70px;
+  font-size: 100px;
   font-weight: bold;
+  margin-bottom: 50px;
 }
 
 #grid {
@@ -64,7 +65,6 @@ main {
   display: flex;
   flex-direction: column;
   gap: 25px;
-  margin-top:100px;
   width: 200px;
   align-items: center;
 }
@@ -91,17 +91,17 @@ button.active {
   gap: 40px;
 }
 
-input[type='color'] {
+input[type="color"] {
   width: 80px;
   height: 80px;
   border: none;
 }
 
-input[type='color']::-webkit-color-swatch-wrapper {
+input[type="color"]::-webkit-color-swatch-wrapper {
   padding: 0;
 }
 
-input[type='color']::-webkit-color-swatch {
+input[type="color"]::-webkit-color-swatch {
   border: none;
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
@@ -147,19 +147,19 @@ input[type="checkbox"]:checked::before {
   transform: scale(1);
 }
 
-input[type='range'] {
+input[type="range"] {
   -webkit-appearance: none;
   background-color: var(--primary-light);
 }
 
-input[type='range']::-webkit-slider-runnable-track {
+input[type="range"]::-webkit-slider-runnable-track {
   height: 10px;
   border: 1px solid var(--primary-dark);
   border-radius: 25px;
   background: var(--secondary-light);
 }
 
-input[type='range']::-webkit-slider-thumb {
+input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   width: 24px;
   height: 24px;
