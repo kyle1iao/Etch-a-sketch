@@ -1,24 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-a-sketch</title>
-</head>
-<body>
-    <header>
-        Etch-a-sketch
-    </header>
-
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
     <main>
-        <div class = "settings">
-            
-        </div>
-
-        <div id = "grid">
-            
-        </div>
+      <div class="settings">
+        <button>Color Mode</button>
+        <button>Rainbow Mode</button>
+        <button>Eraser</button>
+        <button>Clear</button>
+        <button>Resize Slider</button>
+      </div>
+      <div id="board">
+        <header>Etch-a-sketch</header>
+        <div id="grid"></div>
+      </div>
     </main>
-
-</body>
+    <script src="app.js"></script>
+  </body>
 </html>
