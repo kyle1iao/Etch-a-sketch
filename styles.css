@@ -78,6 +78,11 @@ button {
   width: 200px;
 }
 
+button:hover,
+input[type='color']:hover {
+  transform: scale(1.05);
+}
+
 button.active {
   background-color: var(--primary-dark);
   color: var(--primary-light);
